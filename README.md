@@ -27,6 +27,8 @@
 
 ### Yarn
 
+[![Join the chat at https://gitter.im/typesome/typesome](https://badges.gitter.im/typesome/typesome.svg)](https://gitter.im/typesome/typesome?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 ```
 yarn add https://github.com/typesome/typesome.git
 ```
