@@ -1,0 +1,41 @@
+{
+		"version": "0.1.0",
+		"command": "yarn",
+		"isShellCommand": true,
+		"showOutput": "always",
+		"suppressTaskName": true,
+		"tasks": [
+				{
+						"taskName": "yarn:start",
+						"args": ["run" , "start"],
+						"isBuildCommand": true,
+						"showOutput": "silent"
+				},
+				{
+						"taskName": "yarn:test",
+						"args": ["run", "test"],
+						"isBuildCommand": false,
+						"showOutput": "silent"
+				},
+				{
+						"taskName": "yarn:test:watch",
+						"args": ["run" , "test:watch"],
+						"isBuildCommand": false,
+						"isBackground": true,
+						"showOutput": "silent"
+				},
+				{
+						"taskName": "yarn:build",
+						"args": ["run", "build"],
+						"isBuildCommand": false,
+						"showOutput": "silent"
+				},
+				{
+						"taskName": "yarn:build:watch",
+						"args": ["run" , "build:watch"],
+						"isBuildCommand": false,
+						"isBackground": true,
+						"showOutput": "silent"
+				}
+		]
+}

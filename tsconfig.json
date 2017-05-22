@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "target": "ES5",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "removeComments": false,
+    "noImplicitAny": false,
+		"rootDir": "src",
+		"outDir": "dist",
+		"declaration": true,
+		"declarationDir": "typings",
+		"forceConsistentCasingInFileNames": true
+  },
+	"exclude": [
+		"./node_modules",
+		"./dist",
+		"./.vscode",
+		"./doc",
+		"./typings"
+	]
+}

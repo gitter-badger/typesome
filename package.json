@@ -1,0 +1,39 @@
+{
+  "name": "typesome",
+  "description": "Util library for TypeScript.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Kevin Palatzky",
+    "email": "kevin.palatzky+typesome@gmail.com"
+  },
+  "license": "MIT",
+  "private": true,
+  "main": "dist/typesome.js",
+  "typings": "typings/typesome.d.ts",
+  "dependencies": {},
+  "devDependencies": {
+    "@types/chai": "^3.5.2",
+    "@types/mocha": "latest",
+    "awesome-typescript-loader": "latest",
+    "chai": "^3.5.0",
+    "copy-webpack-plugin": "latest",
+    "mocha": "latest",
+    "typescript": "latest",
+    "webpack": "latest"
+  },
+	"repository": {
+    "type": "git",
+    "url": "https://github.com/typesome/typesome.git"
+  },
+	"homepage": "https://github.com/typesome/typesome",
+	"scripts": {
+    "start": "yarn run test",
+    "build": "./node_modules/.bin/webpack",
+    "build:watch": "./node_modules/.bin/webpack -w",
+    "build:production": "./node_modules/.bin/webpack -p",
+    "pretest": "yarn run build",
+    "test": "mocha --reporter spec test",
+    "test:watch": "mocha --watch --reporter spec test",
+		"travis:test": "yarn run test"
+  }
+}
